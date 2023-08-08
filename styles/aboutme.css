@@ -1,7 +1,14 @@
+body {
+    background-color: #19202f;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #19202f;
     overflow: hidden;
+    align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -12,6 +19,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Change the color of links on hover */
@@ -35,5 +43,10 @@
 
 #intro {
     padding: 25px;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: white;
 }
