@@ -2,20 +2,98 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles/index.css">
+    <script src="src/nav.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Jorge Hernandez</title>
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="src/resume.html">Resume</a>
-        <a href="src/portfolio.html">Portfolio</a>
-        <a href="src/aboutme.html">About Me</a>
-        <a href="src/contactme.html">Contact Me</a>
+
+    <header class="primary-header">
+        <a href="#top" id="logo">Jorge Hernandez</a>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+            <ul class="primary-navigation flex" data-visible="false">
+                <li class="nav-tab"><a href="index.html#about-me">About Me</a>
+                <li class="nav-tab"><a href="index.html#Experience"><span aria-hidden="true">Experience</span></a>
+                <li class="nav-tab"><a href="index.html#resume">Resume</a>
+                <li class="nav-tab"><a href="index.html#portfolio">Portfolio</a>
+                <li class="nav-tab"><a href="index.html#contact-me">Contact Me</a>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="homescreen">
+        <h1 id="center-name">Jorge Hernandez</h1>
+        <h2 id="center-description"> - Software Developer - </h2>
     </div>
 
-    <h1 id="center-name">Jorge Hernandez</h1>
-    <h2 id="center-description"> - Software Developer - </h2>
+    <div class="section" id="about-me">
+        <img id="portrait" src="../images/portrait.jpeg">
+
+        <h1 id="intro">Nice to Meet You!</h1>
+        <p id="about">My name is Jorge Hernandez, and I am a 22-year-old recent graduate of Stephen F. Austin State University <br>
+            with a Bachelor of Science in Computer Science. I am looking to begin my career as a Software Developer <br>
+            and aim to showcase my skills through this website. <br>
+            <br>
+            I have known that I wanted to major in Computer Science ever since I was in middle school. It first started <br>
+            as a desire to develop video games. I began researching online how to become a game developer and learned <br>
+            that Computer Science was the perfect field that would allow me to pursue that career, however, it would <br>
+            also open the door to other career paths if game development didn't work out. <br>
+            <br>
+            After taking my introductory Computer Science course, I fell in love with the ability to solve problems <br>
+            efficiently. Everywhere I looked, I saw a way to apply what I learned in my class and would generate idea <br>
+            after idea for software such as apps and websites that would make my day-to-day life easier. It took one <br>
+            attempt at making an app before I quickly realized just how much I had to learn before I would be able <br>
+            to make my ideas come to life. <br>
+            <br>
+            Now I sit at the culmination of my four years of hard work and can confidently say that I am able to make <br>
+            efficient, responsive, and practical software. I started with the creation of this website to showcase my web <br>
+            development skills in HTML and CSS. Then, I began working on an app which I named “OnTrack” with the purpose <br>
+            of facilitating my financial tracking methods. After successfully completing these two projects, I now turn <br>
+            to the corporate world to see who I can develop software for that will help more lives than just my own.
+        </p>
+    </div>
+
+    <div class="section" id="resume">
+        <object
+        type="application/pdf"
+        data="../images/Jorge Hernandez Resume.pdf"
+        width="100%"
+        height=1188px
+        >
+        </object>
+    </div>
+
+    <div class="section" id="portfolio">
+        <h1 id="portfolio-heading">My Portfolio</h1>
+
+        <a target="_blank" href="https://github.com/hernandezj0174/OnTrack">
+            <div id="gallery-container">
+                <img id="ontrack-image" src="../images/ontrack-logo.png">
+            </div>
+        </a>
+        <h2 id="gallery-title">OnTrack App</h2>
+        <p id="ontrack-description">OnTrack is a financial tracking app where users are able to input their transacations and review them in a compact and easy to digest form.</p>
+        <br><br><br><br><br><br><br>
+        <a target="_blank" href="https://github.com/hernandezj0174/Pong">
+            <div id="gallery-container">
+                <img id="pong-image" src="../images/pong.png">
+            </div>
+        </a>
+        <h2 id="gallery-title">Pong Clone</h2>
+        <p id="pong-description">A pong clone developed as a test for using the Arcade Machine's joysticks as controls.</p>
+    </div>
+
+    <div class="section" id="contact-me">
+        <h2>Phone: 936-205-7769</h2>
+        <h2>Email: hernandezj0174@gmail.com</h2>
+        <h2>LinkedIn: hernandezj0174</h2>
+        <h2>GitHub: hernandezj0174</h2>
+    </div>
 </body>
 </html>
