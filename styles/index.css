@@ -21,7 +21,28 @@ body {
     padding-top: 60px;
 }
 
+#section-container {
+    width: 50%;
+    margin: auto;
+}
+
 /* ----------- Navigation Bar ------------ */
+@media (min-width: 36em) {
+    .primary-navigation {
+        padding-block: 2rem;
+        padding-inline: clamp(2rem, 10vw, 10rem);
+        top: 0;
+        width: 100%;
+    }
+
+    .primary-header.sticking {
+        --_bg: #19202f;
+        --_nav-link-color: #00c8ff;
+        --_height: 60px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    }
+}
+
 .primary-header {
     display: flex;
     align-items: center;
@@ -42,13 +63,6 @@ body {
     transition: background-color 500ms;
 }
 
-.primary-header.sticking {
-    --_bg: #19202f;
-    --_nav-link-color: #00c8ff;
-    --_height: 60px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -62,7 +76,7 @@ a {
 }
 
 #logo {
-    padding-left: 3rem;
+    padding-right: 150px;
     font-size: 25px;
     color: #00c8ff;
 }
@@ -86,6 +100,11 @@ a {
 }
 
 /* --------------- About Me --------------- */
+#about-me {
+    color: black;
+    background-color: rgb(233, 233, 233);
+}
+
 #about {
     line-height: 30px;
 }
@@ -97,20 +116,47 @@ a {
     padding-right: 25px;
     padding-top: 10px;
     padding-left: 10px;
-    border-radius: 20%;
 }
 
 #intro {
+    padding-top: 50px;
     font-size: 50px;
-    color: #00c8ff;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#contact-group {
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+#contact-logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* -------------- Experience -------------- */
+#section-title {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#group-picture {
+    width: 321px;
+    height: 241px
+}
+
+#experience-section-title {
+    color: #00c8ff;
+    font-size: 30px
+}
 
 /* ---------------- Resume ---------------- */
 
 
-/* --------------- Portfolio --------------- */
+/* --------------- Portfolio -------------- */
 #portfolio-heading {
     text-align: center;
     font-size: 75px;
@@ -147,14 +193,6 @@ a {
     float: right;
 }
 
-.active {
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    border-width: 2px;
-    padding: 10px;
-}
-
 .nav-tab {
     padding: 10px;
 }
@@ -178,16 +216,9 @@ nav ul {
     gap: var(--gap, 3rem);
 }
 
-@media (min-width: 36em) {
-    .primary-navigation {
-        padding-block: 2rem;
-        padding-inline: clamp(2rem, 10vw, 10rem);
-        top: 0;
-        width: 100%;
-    }
-}
-
+/* -------------- MOBILE VIEW -------------- */
 @media (max-width: 36em) {
+    /* -------------- Navigation Bar -------------- */
     #logo {
         display: none;
     }
@@ -232,5 +263,41 @@ nav ul {
     .mobile-nav-toggle[aria-expanded="true"] {
         background-image: url("../images/close-icon.svg");
         background-size: 35px;
+    }
+
+    /* -------------- Homescreen -------------- */
+    #homescreen {
+        margin-top: 50%;
+    }
+
+    #center-name {
+        font-size: 75px;
+    }
+
+    /* --------------- About Me --------------- */
+    #about-me {
+        justify-content: center;
+    }
+
+    #portrait {
+        padding-left: 14%;
+        padding-bottom: 5%;
+    }
+
+    #intro {
+        padding: 10px;
+        font-size: 45px;
+        color: #00c8ff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #about {
+        padding: 10px;
+    }
+
+    /* ---------------- Resume ---------------- */
+    #resume {
+        width: auto;
+        height: auto;
     }
 }
