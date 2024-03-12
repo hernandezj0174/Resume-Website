@@ -1,0 +1,7 @@
+
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+
+                        <h3>Experience</h3>
+                        <P>6 Months <br> Associate Software Engineer</P>
+                    </div>
